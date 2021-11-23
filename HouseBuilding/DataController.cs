@@ -51,7 +51,7 @@ namespace HouseBuilding
             pboxMapped.Add("ablak", new List<string>(){ "pictureBoxWindowLeft", "pictureBoxWindowRight" });
             pboxMapped.Add("ajto", new List<string>() { "pictureBoxDoor" });
             pboxMapped.Add("disz", new List<string>() { "pictureBoxDecoration" });
-            pboxMapped.Add("csengo", new List<string>() { "pictureBoxRinger" });
+            pboxMapped.Add("csengo", new List<string>() { "pictureBoxBell" });
             pboxMapped.Add("csillag", new List<string>() { "pictureBoxCloudStars" });
             pboxMapped.Add("felho", new List<string>() { "pictureBoxCloudStars" });
             pboxMapped.Add("hold", new List<string>() { "pictureBoxPlanet" });
