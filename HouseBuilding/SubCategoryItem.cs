@@ -6,15 +6,20 @@ namespace HouseBuilding
 {
     public partial class SubCategoryItem : UserControl
     {
+        private Item item;
+
         /// <summary>
         /// 'baseColor' stores the initial BackColor of the user control.
         /// After the mouse leaves the control, it resets its color to this.
         /// </summary>
         protected Color baseColor;
+        
+        public Item Item { get => this.item; }
 
         public SubCategoryItem(Item item)
         {
             InitializeComponent();
+            this.item = item;
             this.pictureBoxImage.Image = Image.FromFile(item.MainImage);
         }
 

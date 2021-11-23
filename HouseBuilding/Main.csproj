@@ -111,5 +111,8 @@
   <ItemGroup>
     <None Include="Resources\house.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haz_alap.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

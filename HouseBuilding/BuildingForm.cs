@@ -3,6 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Windows.Forms;
+    using System.Linq;
+    using System.Drawing;
 
     public partial class BuildingForm : Form
     {
@@ -11,7 +13,10 @@
         public BuildingForm()
         {
             InitializeComponent();
-            
+            this.pictureBoxChimney.Parent = this.pictureBoxRoof;
+            this.pictureBoxChimney.Location = new Point(
+                this.pictureBoxRoof.Width - this.pictureBoxChimney.Width - 20,
+                30);
             this.Icon = Properties.Resources.house;
             
             this.InitializeCategories();            
@@ -48,7 +53,31 @@
             => this.InitializeSubCategories(sender as CategoryItem);
         private void OnCategoryItemClick(object sender, EventArgs e)
         {
-            /// TODO: Add pictureboxes to the form and insert the clicked image to it.
+            SubCategoryItem source = sender as SubCategoryItem;
+
+            var names = DataController.GetLocation(source);
+
+            SetImage(names.Item1, source.Item.MainImage);
+            SetImage(names.Item2, source.Item.MainImage);
+        }
+
+        private void SetImage(string name, string source)
+        {
+            if (name == null || name == string.Empty)
+                return;
+
+            PictureBox target = this.panelHouse.Controls.Find(name, true).FirstOrDefault() as PictureBox;
+            
+            if (target.ImageLocation != null && target.ImageLocation.Equals(source))
+            {
+                target.Image = null;
+                target.ImageLocation = null;
+            }
+            else
+            {
+                target.Image = Image.FromFile(source);
+                target.ImageLocation = source;
+            }
         }
     }
 }
