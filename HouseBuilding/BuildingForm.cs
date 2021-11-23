@@ -60,6 +60,8 @@
         public BuildingForm()
         {
             InitializeComponent();
+            
+            this.SuspendLayout();
 
             foreach (Control c in GetAll(this.panelHouse, typeof(PictureBox)))
             {
@@ -85,7 +87,7 @@
             this.pictureBoxChimney.Location = new Point(
                 this.pictureBoxRoof.Width - this.pictureBoxChimney.Width - 20,
                 30);
-            
+
             this.pictureBoxDoor.Location = new Point(
                 (this.pictureBoxWall.Width - this.pictureBoxDoor.Width)/2,
                 this.pictureBoxWall.Height - this.pictureBoxDoor.Height + 15
@@ -112,9 +114,9 @@
                 this.pictureBoxWindowLeft.Location.Y
                 );
 
-            this.pictureBoxMat.Location = new Point(this.panelHouse.Width / 2, 0);
+            this.pictureBoxMat.Location = new Point(this.panelHouse.Width / 2, this.pictureBoxWall.Height + this.pictureBoxWall.Location.Y + 5);
             this.pictureBoxElf.Location = new Point(this.pictureBoxFenceLeft.Width - this.pictureBoxElf.Width, -10);
-            this.pictureBoxFenceLeft.BringToFront() ;
+            this.pictureBoxFenceLeft.BringToFront();
 
             this.pictureBoxLetterBox.Location = new Point(30,30);
 
@@ -133,10 +135,13 @@
                 );
             #endregion
 
-
             this.Icon = Properties.Resources.house;
             
-            this.InitializeCategories();            
+            this.ResumeLayout(false);
+            Application.DoEvents();
+
+            this.InitializeCategories();
+            this.buttonBorders_Click(this.buttonBorders as object, EventArgs.Empty);
         }
 
         private void InitializeCategories()
@@ -221,13 +226,10 @@
                 p.BorderStyle = style;
         }
         private void RemoveBorders()
-        {
-            this.SetBorders(BorderStyle.None);
-        }
+            => this.SetBorders(BorderStyle.None);
+
         private void AddBorders()
-        {
-            this.SetBorders(BorderStyle.Fixed3D);
-        }
+            => this.SetBorders(BorderStyle.Fixed3D);
 
         private void buttonBorders_Click(object sender, EventArgs e)
         {
@@ -235,6 +237,14 @@
                 this.AddBorders();
             else
                 this.RemoveBorders();
+        }
+
+        private void checkBoxBG_CheckedChanged(object sender, EventArgs e)
+        {
+            if ((sender as CheckBox).Checked)
+                this.panelHouse.BackColor = Color.FromArgb(239, 228, 176);
+            else
+                this.panelHouse.BackColor = Color.FromName("Control");
         }
     }
 }
