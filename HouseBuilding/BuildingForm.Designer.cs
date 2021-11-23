@@ -35,10 +35,7 @@ namespace HouseBuilding
             this.pictureBoxChristmasLights = new System.Windows.Forms.PictureBox();
             this.pictureBoxElf = new System.Windows.Forms.PictureBox();
             this.pictureBoxLetterBox = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFenceRight = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFenceLeft = new System.Windows.Forms.PictureBox();
             this.pictureBoxMat = new System.Windows.Forms.PictureBox();
-            this.pictureBoxGround = new System.Windows.Forms.PictureBox();
             this.pictureBoxReindeer = new System.Windows.Forms.PictureBox();
             this.pictureBoxTree = new System.Windows.Forms.PictureBox();
             this.pictureBoxCloudStars = new System.Windows.Forms.PictureBox();
@@ -52,16 +49,15 @@ namespace HouseBuilding
             this.panelControls = new System.Windows.Forms.Panel();
             this.flowLayoutPanelSubControls = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelMainControls = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxFenceLeft = new System.Windows.Forms.PictureBox();
+            this.buttonBorders = new System.Windows.Forms.Button();
             this.panelHouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRoof)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChimney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChristmasLights)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxElf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLetterBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReindeer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloudStars)).BeginInit();
@@ -73,6 +69,7 @@ namespace HouseBuilding
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDoor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWall)).BeginInit();
             this.panelControls.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceLeft)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHouse
@@ -81,15 +78,14 @@ namespace HouseBuilding
             this.panelHouse.BackgroundImage = global::HouseBuilding.Properties.Resources.house_base;
             this.panelHouse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelHouse.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelHouse.Controls.Add(this.buttonBorders);
             this.panelHouse.Controls.Add(this.pictureBoxRoof);
             this.panelHouse.Controls.Add(this.pictureBoxChimney);
             this.panelHouse.Controls.Add(this.pictureBoxChristmasLights);
             this.panelHouse.Controls.Add(this.pictureBoxElf);
             this.panelHouse.Controls.Add(this.pictureBoxLetterBox);
-            this.panelHouse.Controls.Add(this.pictureBoxFenceRight);
             this.panelHouse.Controls.Add(this.pictureBoxFenceLeft);
             this.panelHouse.Controls.Add(this.pictureBoxMat);
-            this.panelHouse.Controls.Add(this.pictureBoxGround);
             this.panelHouse.Controls.Add(this.pictureBoxReindeer);
             this.panelHouse.Controls.Add(this.pictureBoxTree);
             this.panelHouse.Controls.Add(this.pictureBoxCloudStars);
@@ -140,10 +136,10 @@ namespace HouseBuilding
             this.pictureBoxChristmasLights.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxChristmasLights.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxChristmasLights.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxChristmasLights.Location = new System.Drawing.Point(276, 216);
+            this.pictureBoxChristmasLights.Location = new System.Drawing.Point(276, 224);
             this.pictureBoxChristmasLights.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxChristmasLights.Name = "pictureBoxChristmasLights";
-            this.pictureBoxChristmasLights.Size = new System.Drawing.Size(350, 69);
+            this.pictureBoxChristmasLights.Size = new System.Drawing.Size(350, 91);
             this.pictureBoxChristmasLights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxChristmasLights.TabIndex = 17;
             this.pictureBoxChristmasLights.TabStop = false;
@@ -155,10 +151,10 @@ namespace HouseBuilding
             this.pictureBoxElf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxElf.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxElf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxElf.Location = new System.Drawing.Point(133, 512);
+            this.pictureBoxElf.Location = new System.Drawing.Point(129, 402);
             this.pictureBoxElf.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxElf.Name = "pictureBoxElf";
-            this.pictureBoxElf.Size = new System.Drawing.Size(148, 184);
+            this.pictureBoxElf.Size = new System.Drawing.Size(147, 245);
             this.pictureBoxElf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxElf.TabIndex = 16;
             this.pictureBoxElf.TabStop = false;
@@ -170,44 +166,14 @@ namespace HouseBuilding
             this.pictureBoxLetterBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxLetterBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxLetterBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLetterBox.Location = new System.Drawing.Point(686, 534);
+            this.pictureBoxLetterBox.Location = new System.Drawing.Point(5, 436);
             this.pictureBoxLetterBox.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxLetterBox.Name = "pictureBoxLetterBox";
-            this.pictureBoxLetterBox.Size = new System.Drawing.Size(122, 152);
+            this.pictureBoxLetterBox.Size = new System.Drawing.Size(124, 211);
             this.pictureBoxLetterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLetterBox.TabIndex = 15;
             this.pictureBoxLetterBox.TabStop = false;
             this.pictureBoxLetterBox.WaitOnLoad = true;
-            // 
-            // pictureBoxFenceRight
-            // 
-            this.pictureBoxFenceRight.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxFenceRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxFenceRight.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxFenceRight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxFenceRight.Location = new System.Drawing.Point(624, 463);
-            this.pictureBoxFenceRight.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBoxFenceRight.Name = "pictureBoxFenceRight";
-            this.pictureBoxFenceRight.Size = new System.Drawing.Size(302, 184);
-            this.pictureBoxFenceRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxFenceRight.TabIndex = 14;
-            this.pictureBoxFenceRight.TabStop = false;
-            this.pictureBoxFenceRight.WaitOnLoad = true;
-            // 
-            // pictureBoxFenceLeft
-            // 
-            this.pictureBoxFenceLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxFenceLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxFenceLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxFenceLeft.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxFenceLeft.Location = new System.Drawing.Point(-2, 463);
-            this.pictureBoxFenceLeft.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBoxFenceLeft.Name = "pictureBoxFenceLeft";
-            this.pictureBoxFenceLeft.Size = new System.Drawing.Size(278, 184);
-            this.pictureBoxFenceLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxFenceLeft.TabIndex = 13;
-            this.pictureBoxFenceLeft.TabStop = false;
-            this.pictureBoxFenceLeft.WaitOnLoad = true;
             // 
             // pictureBoxMat
             // 
@@ -215,7 +181,7 @@ namespace HouseBuilding
             this.pictureBoxMat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxMat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMat.Location = new System.Drawing.Point(442, 646);
+            this.pictureBoxMat.Location = new System.Drawing.Point(452, 646);
             this.pictureBoxMat.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxMat.Name = "pictureBoxMat";
             this.pictureBoxMat.Size = new System.Drawing.Size(116, 72);
@@ -224,32 +190,16 @@ namespace HouseBuilding
             this.pictureBoxMat.TabStop = false;
             this.pictureBoxMat.WaitOnLoad = true;
             // 
-            // pictureBoxGround
-            // 
-            this.pictureBoxGround.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxGround.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxGround.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxGround.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBoxGround.Location = new System.Drawing.Point(0, 646);
-            this.pictureBoxGround.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBoxGround.Name = "pictureBoxGround";
-            this.pictureBoxGround.Size = new System.Drawing.Size(926, 79);
-            this.pictureBoxGround.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxGround.TabIndex = 11;
-            this.pictureBoxGround.TabStop = false;
-            this.pictureBoxGround.WaitOnLoad = true;
-            // 
             // pictureBoxReindeer
             // 
             this.pictureBoxReindeer.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxReindeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxReindeer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxReindeer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxReindeer.Location = new System.Drawing.Point(708, 307);
+            this.pictureBoxReindeer.Location = new System.Drawing.Point(666, 332);
             this.pictureBoxReindeer.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxReindeer.Name = "pictureBoxReindeer";
-            this.pictureBoxReindeer.Size = new System.Drawing.Size(199, 226);
+            this.pictureBoxReindeer.Size = new System.Drawing.Size(260, 277);
             this.pictureBoxReindeer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxReindeer.TabIndex = 10;
             this.pictureBoxReindeer.TabStop = false;
@@ -261,10 +211,10 @@ namespace HouseBuilding
             this.pictureBoxTree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxTree.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxTree.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxTree.Location = new System.Drawing.Point(0, 222);
+            this.pictureBoxTree.Location = new System.Drawing.Point(659, 149);
             this.pictureBoxTree.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxTree.Name = "pictureBoxTree";
-            this.pictureBoxTree.Size = new System.Drawing.Size(217, 361);
+            this.pictureBoxTree.Size = new System.Drawing.Size(278, 460);
             this.pictureBoxTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxTree.TabIndex = 9;
             this.pictureBoxTree.TabStop = false;
@@ -291,10 +241,10 @@ namespace HouseBuilding
             this.pictureBoxPlanet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxPlanet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxPlanet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxPlanet.Location = new System.Drawing.Point(719, 26);
+            this.pictureBoxPlanet.Location = new System.Drawing.Point(770, 26);
             this.pictureBoxPlanet.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxPlanet.Name = "pictureBoxPlanet";
-            this.pictureBoxPlanet.Size = new System.Drawing.Size(192, 210);
+            this.pictureBoxPlanet.Size = new System.Drawing.Size(134, 123);
             this.pictureBoxPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPlanet.TabIndex = 7;
             this.pictureBoxPlanet.TabStop = false;
@@ -321,7 +271,7 @@ namespace HouseBuilding
             this.pictureBoxDecoration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxDecoration.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxDecoration.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxDecoration.Location = new System.Drawing.Point(464, 401);
+            this.pictureBoxDecoration.Location = new System.Drawing.Point(483, 436);
             this.pictureBoxDecoration.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxDecoration.Name = "pictureBoxDecoration";
             this.pictureBoxDecoration.Size = new System.Drawing.Size(75, 62);
@@ -336,10 +286,10 @@ namespace HouseBuilding
             this.pictureBoxWindowLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxWindowLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxWindowLeft.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWindowLeft.Location = new System.Drawing.Point(297, 285);
+            this.pictureBoxWindowLeft.Location = new System.Drawing.Point(297, 320);
             this.pictureBoxWindowLeft.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxWindowLeft.Name = "pictureBoxWindowLeft";
-            this.pictureBoxWindowLeft.Size = new System.Drawing.Size(116, 126);
+            this.pictureBoxWindowLeft.Size = new System.Drawing.Size(122, 124);
             this.pictureBoxWindowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxWindowLeft.TabIndex = 4;
             this.pictureBoxWindowLeft.TabStop = false;
@@ -351,10 +301,10 @@ namespace HouseBuilding
             this.pictureBoxWindowRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxWindowRight.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxWindowRight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWindowRight.Location = new System.Drawing.Point(498, 285);
+            this.pictureBoxWindowRight.Location = new System.Drawing.Point(498, 320);
             this.pictureBoxWindowRight.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxWindowRight.Name = "pictureBoxWindowRight";
-            this.pictureBoxWindowRight.Size = new System.Drawing.Size(116, 126);
+            this.pictureBoxWindowRight.Size = new System.Drawing.Size(122, 124);
             this.pictureBoxWindowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxWindowRight.TabIndex = 3;
             this.pictureBoxWindowRight.TabStop = false;
@@ -366,10 +316,10 @@ namespace HouseBuilding
             this.pictureBoxDoor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxDoor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxDoor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxDoor.Location = new System.Drawing.Point(412, 421);
+            this.pictureBoxDoor.Location = new System.Drawing.Point(429, 437);
             this.pictureBoxDoor.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxDoor.Name = "pictureBoxDoor";
-            this.pictureBoxDoor.Size = new System.Drawing.Size(173, 225);
+            this.pictureBoxDoor.Size = new System.Drawing.Size(145, 209);
             this.pictureBoxDoor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDoor.TabIndex = 2;
             this.pictureBoxDoor.TabStop = false;
@@ -423,6 +373,35 @@ namespace HouseBuilding
             this.flowLayoutPanelMainControls.Size = new System.Drawing.Size(416, 463);
             this.flowLayoutPanelMainControls.TabIndex = 0;
             // 
+            // pictureBoxFenceLeft
+            // 
+            this.pictureBoxFenceLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxFenceLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFenceLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxFenceLeft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxFenceLeft.Location = new System.Drawing.Point(-2, 375);
+            this.pictureBoxFenceLeft.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBoxFenceLeft.Name = "pictureBoxFenceLeft";
+            this.pictureBoxFenceLeft.Size = new System.Drawing.Size(278, 272);
+            this.pictureBoxFenceLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFenceLeft.TabIndex = 13;
+            this.pictureBoxFenceLeft.TabStop = false;
+            this.pictureBoxFenceLeft.WaitOnLoad = true;
+            // 
+            // buttonBorders
+            // 
+            this.buttonBorders.AutoSize = true;
+            this.buttonBorders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBorders.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonBorders.Location = new System.Drawing.Point(76, 275);
+            this.buttonBorders.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonBorders.Name = "buttonBorders";
+            this.buttonBorders.Size = new System.Drawing.Size(118, 41);
+            this.buttonBorders.TabIndex = 19;
+            this.buttonBorders.Text = "Keretek";
+            this.buttonBorders.UseVisualStyleBackColor = true;
+            this.buttonBorders.Click += new System.EventHandler(this.buttonBorders_Click);
+            // 
             // BuildingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,15 +418,13 @@ namespace HouseBuilding
             this.Text = "Házépítés";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelHouse.ResumeLayout(false);
+            this.panelHouse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRoof)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChimney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChristmasLights)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxElf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLetterBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReindeer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloudStars)).EndInit();
@@ -459,6 +436,7 @@ namespace HouseBuilding
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDoor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWall)).EndInit();
             this.panelControls.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFenceLeft)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,16 +456,15 @@ namespace HouseBuilding
         private System.Windows.Forms.PictureBox pictureBoxBell;
         private System.Windows.Forms.PictureBox pictureBoxPlanet;
         private System.Windows.Forms.PictureBox pictureBoxCloudStars;
-        private System.Windows.Forms.PictureBox pictureBoxGround;
         private System.Windows.Forms.PictureBox pictureBoxReindeer;
         private System.Windows.Forms.PictureBox pictureBoxTree;
         private System.Windows.Forms.PictureBox pictureBoxMat;
-        private System.Windows.Forms.PictureBox pictureBoxFenceRight;
-        private System.Windows.Forms.PictureBox pictureBoxFenceLeft;
         private System.Windows.Forms.PictureBox pictureBoxLetterBox;
         private System.Windows.Forms.PictureBox pictureBoxElf;
         private System.Windows.Forms.PictureBox pictureBoxChristmasLights;
         private System.Windows.Forms.PictureBox pictureBoxChimney;
+        private System.Windows.Forms.PictureBox pictureBoxFenceLeft;
+        private System.Windows.Forms.Button buttonBorders;
     }
 }
 

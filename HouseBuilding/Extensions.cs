@@ -30,7 +30,6 @@ namespace HouseBuilding
                     }
                 }
             }
-
             return transparent;
         }
     }
