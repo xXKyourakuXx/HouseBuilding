@@ -85,7 +85,7 @@
 
             #region Set locations inside new parent controls
             this.pictureBoxChimney.Location = new Point(
-                this.pictureBoxRoof.Width - this.pictureBoxChimney.Width - 20,
+                this.pictureBoxRoof.Width - this.pictureBoxChimney.Width - 50,
                 30);
 
             this.pictureBoxDoor.Location = new Point(
@@ -95,7 +95,7 @@
 
             this.pictureBoxBell.Location = new Point(
                 this.pictureBoxDoor.Location.X - this.pictureBoxBell.Width - 10,
-                300
+                this.pictureBoxDoor.Location.Y + this.pictureBoxBell.Height - 30
                 );
 
             this.pictureBoxDecoration.Location = new Point(
@@ -103,10 +103,10 @@
                 0
                 );
 
-            this.pictureBoxChristmasLights.Location = new Point(0,75);
+            this.pictureBoxChristmasLights.Location = new Point(0,5);
 
             this.pictureBoxWindowLeft.Location = new Point(
-                    50,
+                    30,
                     this.pictureBoxChristmasLights.Location.Y + this.pictureBoxChristmasLights.Height + 5
                 );
             this.pictureBoxWindowRight.Location = new Point(
@@ -114,7 +114,7 @@
                 this.pictureBoxWindowLeft.Location.Y
                 );
 
-            this.pictureBoxMat.Location = new Point(this.panelHouse.Width / 2, this.pictureBoxWall.Height + this.pictureBoxWall.Location.Y + 5);
+            this.pictureBoxMat.Location = new Point(this.panelHouse.Width / 2 - 28, this.pictureBoxWall.Height + this.pictureBoxWall.Location.Y + 5);
             this.pictureBoxElf.Location = new Point(this.pictureBoxFenceLeft.Width - this.pictureBoxElf.Width, -10);
             this.pictureBoxFenceLeft.BringToFront();
 
