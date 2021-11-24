@@ -270,10 +270,10 @@ namespace HouseBuilding
             this.pictureBoxCloudStars.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCloudStars.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxCloudStars.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCloudStars.Location = new System.Drawing.Point(0, 7);
+            this.pictureBoxCloudStars.Location = new System.Drawing.Point(18, 44);
             this.pictureBoxCloudStars.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBoxCloudStars.Name = "pictureBoxCloudStars";
-            this.pictureBoxCloudStars.Size = new System.Drawing.Size(217, 133);
+            this.pictureBoxCloudStars.Size = new System.Drawing.Size(264, 168);
             this.pictureBoxCloudStars.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCloudStars.TabIndex = 8;
             this.pictureBoxCloudStars.TabStop = false;
